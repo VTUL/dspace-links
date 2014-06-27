@@ -1,0 +1,96 @@
+<map>
+  <entry>
+    <string>au_manifest</string>
+    <list>
+      <string>&quot;%s/manifestSmartech.html&quot;, base_url2</string>
+      <string>&quot;%s/MACmanifest/permission.txt&quot;, base_url</string>
+    </list>
+  </entry>
+  <entry>
+    <string>plugin_config_props</string>
+    <list>
+      <org.lockss.daemon.ConfigParamDescr>
+        <key>base_url</key>
+        <displayName>Base URL</displayName>
+        <description>Usually of the form http://&lt;journal-name&gt;.com/</description>
+        <type>3</type>
+        <size>40</size>
+        <definitional>true</definitional>
+        <defaultOnly>false</defaultOnly>
+      </org.lockss.daemon.ConfigParamDescr>
+      <org.lockss.daemon.ConfigParamDescr>
+        <key>base_url2</key>
+        <displayName>Second Base URL</displayName>
+        <description>Use if AU spans two hosts</description>
+        <type>3</type>
+        <size>40</size>
+        <definitional>true</definitional>
+        <defaultOnly>false</defaultOnly>
+      </org.lockss.daemon.ConfigParamDescr>
+      <org.lockss.daemon.ConfigParamDescr>
+        <key>hdl_id</key>
+        <displayName>hdl_id</displayName>
+        <description>Handle ID</description>
+        <type>1</type>
+        <size>40</size>
+        <definitional>true</definitional>
+        <defaultOnly>false</defaultOnly>
+      </org.lockss.daemon.ConfigParamDescr>
+      <org.lockss.daemon.ConfigParamDescr>
+        <key>collection_name</key>
+        <displayName>Collection Name</displayName>
+        <description></description>
+        <type>1</type>
+        <size>64</size>
+        <definitional>true</definitional>
+        <defaultOnly>false</defaultOnly>
+      </org.lockss.daemon.ConfigParamDescr>
+    </list>
+  </entry>
+  <entry>
+    <string>plugin_version</string>
+    <string>1</string>
+  </entry>
+  <entry>
+    <string>au_name</string>
+    <string>&quot;DSpace Collection - %s&quot;, collection_name</string>
+  </entry>
+  <entry>
+    <string>au_start_url</string>
+    <string>&quot;%s/manifest.html&quot;, base_url2</string>
+  </entry>
+  <entry>
+    <string>au_crawl_depth</string>
+    <int>4</int>
+  </entry>
+  <entry>
+    <string>au_def_new_content_crawl</string>
+    <long>2592000000</long>
+  </entry>
+  <entry>
+    <string>au_def_pause_time</string>
+    <long>6000</long>
+  </entry>
+  <entry>
+    <string>plugin_name</string>
+    <string>Generic DSpace Plugin</string>
+  </entry>
+  <entry>
+    <string>plugin_identifier</string>
+    <string>edu.vt.library.dspace</string>
+  </entry>
+  <entry>
+    <string>au_crawlrules</string>
+    <list>
+      <string>1,&quot;^%s/MACmanifest/permission.txt&quot;, base_url</string>
+      <string>1,&quot;^%s/manifest.html&quot;, base_url2</string>
+      <string>1,&quot;set=col_123456789_%s&quot;, hdl_id</string>
+      <string>1,&quot;^%s/handle/123456789/[0-9]+\?mode=full&quot;, base_url</string>
+      <string>1,&quot;^%s/bitstream/123456789/*/*/*&quot;, base_url</string>
+    </list>
+  </entry>
+  <entry>
+    <string>plugin_crawl_type</string>
+    <string>HTML Links</string>
+  </entry>
+</map>
