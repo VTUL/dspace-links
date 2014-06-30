@@ -57,7 +57,7 @@ class DSpaceCollection:
         return len(self._identifiers) > 0
 
 @app.route('/manifest/<collection>')
-def manifest():
+def manifest(collection):
     """Send the static manifest page"""
 
     collection = collection.strip(' \t\r\n\'";:&=<>(){}[]')
