@@ -2,7 +2,7 @@
 
 from bs4 import BeautifulSoup
 from collections import namedtuple
-from flask import Flask
+from flask import Flask, render_template
 from lxml import etree
 import requests
 
@@ -56,11 +56,12 @@ class DSpaceCollection:
 
         return len(self._identifiers) > 0
 
-@app.route('/manifest.html')
+@app.route('/manifest/<collection>')
 def manifest():
     """Send the static manifest page"""
 
-    return app.send_static_file('manifest.html')
+    collection = collection.strip(' \t\r\n\'";:&=<>(){}[]')
+    return render_template('manifest.html', collection=collection)
 
 @app.route('/<collection>')
 def linkify_dim_collection(collection):
