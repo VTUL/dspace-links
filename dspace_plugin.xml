@@ -82,11 +82,10 @@
   <entry>
     <string>au_crawlrules</string>
     <list>
-      <string>1,&quot;^%s/MACmanifest/permission.txt&quot;, base_url</string>
       <string>1,&quot;^%s/manifest.html&quot;, base_url2</string>
       <string>1,&quot;col_10919_%s&quot;, hdl_id</string>
-      <string>1,&quot;^%s/handle/10919/[0-9]+\?mode=full&quot;, base_url</string>
-      <string>1,&quot;^%s/bitstream/10919/*/*/*&quot;, base_url</string>
+      <string>1,&quot;^%s/handle/10919/[0-9]+\?show=full&quot;, base_url</string>
+      <string>1,&quot;^%s/bitstream/handle/10919/[0-9]+/*&quot;, base_url</string>
     </list>
   </entry>
   <entry>
