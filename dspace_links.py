@@ -56,13 +56,13 @@ class DSpaceCollection:
 
         return len(self._identifiers) > 0
 
-@app.route('/manifest/<collection>')
-def manifest(collection):
+@app.route('/manifest.html')
+def manifest():
     """Send the static manifest page"""
 
-    collection = collection.strip(' \t\r\n\'";:&=<>(){}[]')
-    return render_template('manifest.html', collection=collection)
+    return app.send_static_file('manifest.html')
 
+# The 'collection' for CS technical reports is 'col_10919_19372'
 @app.route('/<collection>')
 def linkify_dim_collection(collection):
     """Retrieve a collection and make links for all its objects, or provide an error."""
