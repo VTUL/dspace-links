@@ -1,15 +1,5 @@
 <map>
   <entry>
-    <string>au_manifest</string>
-    <list>
-      <string>&quot;%s/manifest.html&quot;, base_url2</string>
-    </list>
-  </entry>
-  <entry>
-    <string>plugin_version</string>
-    <string>1</string>
-  </entry>
-  <entry>
     <string>plugin_config_props</string>
     <list>
       <org.lockss.daemon.ConfigParamDescr>
@@ -51,6 +41,10 @@
     </list>
   </entry>
   <entry>
+    <string>plugin_version</string>
+    <string>1</string>
+  </entry>
+  <entry>
     <string>au_name</string>
     <string>&quot;DSpace Collection - %s&quot;, collection_name</string>
   </entry>
@@ -86,9 +80,5 @@
       <string>1,&quot;^%s/handle/10919/[0-9]+\?show=full&quot;, base_url</string>
       <string>1,&quot;^%s/bitstream/handle/10919/[0-9]+/*&quot;, base_url</string>
     </list>
-  </entry>
-  <entry>
-    <string>plugin_crawl_type</string>
-    <string>HTML Links</string>
   </entry>
 </map>
