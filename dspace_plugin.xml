@@ -7,6 +7,10 @@
     </list>
   </entry>
   <entry>
+    <string>plugin_version</string>
+    <string>1</string>
+  </entry>
+  <entry>
     <string>plugin_config_props</string>
     <list>
       <org.lockss.daemon.ConfigParamDescr>
@@ -48,28 +52,24 @@
     </list>
   </entry>
   <entry>
-    <string>plugin_version</string>
-    <string>1</string>
-  </entry>
-  <entry>
     <string>au_name</string>
     <string>&quot;DSpace Collection - %s&quot;, collection_name</string>
-  </entry>
-  <entry>
-    <string>au_start_url</string>
-    <string>&quot;%s/manifest.html&quot;, base_url2</string>
   </entry>
   <entry>
     <string>au_crawl_depth</string>
     <int>4</int>
   </entry>
   <entry>
-    <string>au_def_new_content_crawl</string>
-    <long>2592000000</long>
+    <string>au_start_url</string>
+    <string>&quot;%s/manifest.html&quot;, base_url2</string>
   </entry>
   <entry>
     <string>au_def_pause_time</string>
     <long>6000</long>
+  </entry>
+  <entry>
+    <string>au_def_new_content_crawl</string>
+    <long>2592000000</long>
   </entry>
   <entry>
     <string>plugin_name</string>
@@ -84,9 +84,9 @@
     <list>
       <string>1,&quot;^%s/MACmanifest/permission.txt&quot;, base_url</string>
       <string>1,&quot;^%s/manifest.html&quot;, base_url2</string>
-      <string>1,&quot;set=col_123456789_%s&quot;, hdl_id</string>
-      <string>1,&quot;^%s/handle/123456789/[0-9]+\?mode=full&quot;, base_url</string>
-      <string>1,&quot;^%s/bitstream/123456789/*/*/*&quot;, base_url</string>
+      <string>1,&quot;set=col_10919_%s&quot;, hdl_id</string>
+      <string>1,&quot;^%s/handle/10919/[0-9]+\?mode=full&quot;, base_url</string>
+      <string>1,&quot;^%s/bitstream/10919/*/*/*&quot;, base_url</string>
     </list>
   </entry>
   <entry>
