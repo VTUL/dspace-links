@@ -2,7 +2,7 @@
 
 from bs4 import BeautifulSoup
 from collections import namedtuple
-from flask import Flask, render_template
+from flask import Flask
 from lxml import etree
 import requests
 
