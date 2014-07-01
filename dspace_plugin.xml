@@ -2,8 +2,7 @@
   <entry>
     <string>au_manifest</string>
     <list>
-      <string>&quot;%s/manifestSmartech.html&quot;, base_url2</string>
-      <string>&quot;%s/MACmanifest/permission.txt&quot;, base_url</string>
+      <string>&quot;%s/manifest.html&quot;, base_url2</string>
     </list>
   </entry>
   <entry>
