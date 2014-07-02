@@ -57,6 +57,10 @@
     <string>&quot;%s/manifest.html&quot;, base_url2</string>
   </entry>
   <entry>
+    <string>au_manifest</string>
+    <string>1,&quot;%s/manifest.html&quot;, base_url2</string>
+  </entry>
+  <entry>
     <string>au_def_pause_time</string>
     <long>6000</long>
   </entry>
