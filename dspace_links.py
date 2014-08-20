@@ -36,11 +36,13 @@ class DSpaceCollection:
         else:
             dim_file = requests.get(REQ + '&resumptionToken=' + token)
 
-        xml = etree.XML(bytes(dim_file.text, 'utf-8'))
-        new_identifiers = [id.text for id in xml.findall('{*}ListRecords/{*}record/{*}header/{*}identifier')]
+        xml = etree.XML(dim_file.content)
+        find_ids = etree.XPath('//n:identifier', namespaces={'n':'http://www.openarchives.org/OAI/2.0/'})
+        new_identifiers = [id.text for id in find_ids(xml)]
         self._identifiers.extend(new_identifiers)
 
-        return xml.find('{*}ListRecords/{*}resumptionToken')
+        find_token = etree.XPath('//n:resumptionToken', namespaces={'n':'http://www.openarchives.org/OAI/2.0/'})
+        return find_token(xml)[0]
 
     def link_generator(self):
         """Generate urls for the full record of an object in the collection."""
