@@ -1,0 +1,23 @@
+# backup files
+
+*#*#
+*.swp
+~*
+*.pyc
+
+# virtualenv files
+
+get_env_details*
+initialize*
+postactivate*
+postdeactivate*
+postmkproject*
+postmkvirtualenv*
+postrmvirtualenv*
+preactivate*
+predeactivate*
+premkproject*
+premkvirtualenv*
+prermvirtualenv*
+venv*
+*hw.*
