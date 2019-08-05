@@ -5,4 +5,4 @@ Werkzeug==0.9.4
 beautifulsoup4==4.3.2
 itsdangerous==0.24
 lxml>=2.2.3
-requests==2.2.1
+requests==2.20.0
